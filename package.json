@@ -1,7 +1,15 @@
 {
   "name": "tp_tests",
   "version": "1.0.0",
+  "description": "TP Tests unitaires",
+  "scripts": {
+    "test": "mocha",
+    "test-calculatrice": "cd calculatrice && mocha",
+    "test-hippopotamus": "cd hippopotamus && mocha",
+    "test-user": "cd user && mocha",
+    "test-all": "npm run test-calculatrice && npm run test-hippopotamus && npm run test-user"
+  },
   "dependencies": {
-    
+    "mocha": "^10.2.0"
   }
 }
